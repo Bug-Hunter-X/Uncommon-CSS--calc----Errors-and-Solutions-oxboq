@@ -1,0 +1,27 @@
+/* bugSolution.css */
+
+/* Correctly accounting for padding when using calc() */
+.container {
+  padding: 10px;
+}
+
+.element {
+  width: calc(100% - 20px); /* Subtract double the padding */
+}
+
+/* Correct unit handling in calc() */
+.anotherElement {
+  width: calc(50% + 100px);
+  /* Percentage and pixel units used appropriately */
+}
+
+/* Explicit unit specification for clarity */
+.yetAnother {
+  width: calc( (100vw - 20px) / 2 );
+}
+
+/*Using viewport units(vw, vh) for responsive design*/
+.responsiveElement {
+  width: calc(50vw);
+  height: calc(25vh);
+}
